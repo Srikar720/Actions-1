@@ -14,10 +14,13 @@ jobs:
             echo "My files"
             ls -ltra
             cat README.md
+            
+        - name: Install Cowsay
+          run: sudo apt-get install cowsay -y
 
         - name: Generate ASCII Artwork 
           run: cowsay -f dog >> Dog.txt
-          
+
         #- name: listfiles
         #  run: ls
           
