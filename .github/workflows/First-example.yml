@@ -8,12 +8,18 @@ jobs:
         steps:
         - name: Checkout
           uses: actions/checkout@v4.2.2
-          
+
         - name: Welcome Message
-          run: echo "My files"
+          run: |
+            echo "My files"
+            ls -ltra
+            cat README.md
+
+        - name: Generate ASCII Artwork 
+          run: cowsay -f dog >> Dog.txt
           
-        - name: listfiles
-          run: ls
+        #- name: listfiles
+        #  run: ls
           
-        - name: Readfiles
-          run: cat README.md 
+        #- name: Readfiles
+        # run: cat README.md 
