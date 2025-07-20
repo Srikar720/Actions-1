@@ -11,8 +11,8 @@ jobs:
         
         - name: execute shell script
           run: |
-            chmod +x Script.sh
-            ./Script.sh
+            chmod +x Srikar720/Actions-1/.github/Script.sh
+            ./Srikar720/Actions-1/.github/Script.sh
          
 
         #- name: listfiles
