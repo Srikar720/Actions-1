@@ -10,7 +10,9 @@ jobs:
           uses: actions/checkout@v4.2.2
         
         - name: execute shell script
-          run: ./Script.sh
+          run: |
+            chmod +x
+            ./Script.sh
          
 
         #- name: listfiles
